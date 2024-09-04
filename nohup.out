@@ -1,0 +1,1572 @@
+ * Serving Flask app 'api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://62.67.51.161:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 242-551-208
+45.227.254.49 - - [16/May/2024 07:34:05] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+45.227.254.49 - - [16/May/2024 07:34:05] "[35m[1m\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+98.96.193.34 - - [16/May/2024 09:04:16] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 32, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+98.96.193.34 - - [16/May/2024 09:04:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 32, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+74.50.67.178 - - [16/May/2024 10:31:12] "[35m[1mHEAD / HTTP/1.0[0m" 500 -
+45.95.169.184 - - [16/May/2024 12:11:22] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00\x11\x00\x00\x01é\x00\x01\x00\x00\x00ÿÿÿÿ\x01\x00\x00\x00\x00\x00\x00\x00')
+45.95.169.184 - - [16/May/2024 12:11:22] "[35m[1m\x00\x00\x00\x11\x00\x00\x01é\x00\x01\x00\x00\x00ÿÿÿÿ\x01\x00\x00\x00\x00\x00\x00\x00\x0c\x02\x00\x00\x00\x10MyCustomAssembly\x05\x01\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+98.96.193.42 - - [16/May/2024 12:43:40] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 32, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+98.96.193.42 - - [16/May/2024 12:43:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+{'model': {'target': 'cldm.cldm.ControlLDM', 'params': {'linear_start': 0.00085, 'linear_end': 0.012, 'num_timesteps_cond': 1, 'log_every_t': 200, 'timesteps': 1000, 'first_stage_key': 'image', 'first_stage_key_cond': ['agn', 'agn_mask', 'image_densepose'], 'cond_stage_key': 'cloth', 'control_key': 'cloth', 'image_size': 64, 'channels': 4, 'cond_stage_trainable': False, 'conditioning_key': 'crossattn', 'monitor': 'val/loss_simple_ema', 'scale_factor': 0.18215, 'use_ema': False, 'only_mid_control': False, 'use_VAEdownsample': True, 'use_lastzc': True, 'use_imageCLIP': True, 'use_pbe_weight': True, 'u_cond_percent': 0.2, 'use_attn_mask': False, 'control_stage_config': {'target': 'cldm.warping_cldm_network.NoZeroConvControlNet', 'params': {'image_size': 32, 'in_channels': 13, 'hint_channels': 3, 'model_channels': 320, 'attention_resolutions': [4, 2, 1], 'num_res_blocks': 2, 'channel_mult': [1, 2, 4, 4], 'num_heads': 8, 'use_spatial_transformer': True, 'transformer_depth': 1, 'context_dim': 768, 'use_checkpoint': True, 'legacy': False, 'cond_first_ch': 4}}, 'unet_config': {'target': 'cldm.warping_cldm_network.StableVITON', 'params': {'image_size': 32, 'in_channels': 13, 'out_channels': 4, 'model_channels': 320, 'attention_resolutions': [4, 2, 1], 'num_res_blocks': 2, 'channel_mult': [1, 2, 4, 4], 'num_heads': 8, 'use_spatial_transformer': True, 'transformer_depth': 1, 'context_dim': 768, 'use_checkpoint': True, 'legacy': False, 'dim_head_denorm': 1}}, 'first_stage_config': {'target': 'ldm.models.autoencoder.AutoencoderKL', 'params': {'embed_dim': 4, 'monitor': 'val/rec_loss', 'ddconfig': {'double_z': True, 'z_channels': 4, 'resolution': 256, 'in_channels': 3, 'out_ch': 3, 'ch': 128, 'ch_mult': [1, 2, 4, 4], 'num_res_blocks': 2, 'attn_resolutions': [], 'dropout': 0.0}, 'lossconfig': {'target': 'torch.nn.Identity'}}}, 'validation_config': {'ddim_steps': 50, 'eta': 0.0, 'scale': 1.0}, 'cond_stage_config': {'target': 'ldm.modules.image_encoders.modules.FrozenCLIPImageEmbedder'}, 'img_H': 512, 'img_W': 384}}, 'dataset_name': 'VITONHDDataset', 'default_prompt': '', 'log_images_kwargs': {'unconditional_guidance_scale': 5.0}}
+No module 'xformers'. Proceeding without it.
+ControlLDM: Running in eps-prediction mode
+DiffusionWrapper has 1039.33 M params.
+beta scheduler name : linear
+making attention of type 'vanilla' with 512 in_channels
+Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+making attention of type 'vanilla' with 512 in_channels
+learnable vector gene
+here
+/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/torchvision/transforms/functional.py:1603: UserWarning: The default value of the antialias parameter of all the resizing transforms (Resize(), RandomResizedCrop(), etc.) will change from None to True in v0.17, in order to be consistent across the PIL and Tensor backends. To suppress this warning, directly pass antialias=True (recommended, future default), antialias=None (current default, which means False for Tensors and True for PIL), or antialias=False (only works on Tensors - PIL will still use antialiasing). This also applies if you are using the inference transforms from the models weights: update the call to weights.transforms(antialias=True).
+  warnings.warn(
+0/1
+Data shape for PLMS sampling is (1, 4, 64, 48)
+Running PLMS Sampling with 1 timesteps
+PLMS Sampler:   0%|          | 0/1 [00:00<?, ?it/s]PLMS Sampler: 100%|██████████| 1/1 [00:34<00:00, 34.76s/it]PLMS Sampler: 100%|██████████| 1/1 [00:34<00:00, 34.76s/it]
+62.67.51.161 - - [16/May/2024 14:38:26] "GET /run_SV/2024-05-16_14-37-02 HTTP/1.1" 200 -
+{'text': 'processed in 81.9 seconds'}
+{'model': {'target': 'cldm.cldm.ControlLDM', 'params': {'linear_start': 0.00085, 'linear_end': 0.012, 'num_timesteps_cond': 1, 'log_every_t': 200, 'timesteps': 1000, 'first_stage_key': 'image', 'first_stage_key_cond': ['agn', 'agn_mask', 'image_densepose'], 'cond_stage_key': 'cloth', 'control_key': 'cloth', 'image_size': 64, 'channels': 4, 'cond_stage_trainable': False, 'conditioning_key': 'crossattn', 'monitor': 'val/loss_simple_ema', 'scale_factor': 0.18215, 'use_ema': False, 'only_mid_control': False, 'use_VAEdownsample': True, 'use_lastzc': True, 'use_imageCLIP': True, 'use_pbe_weight': True, 'u_cond_percent': 0.2, 'use_attn_mask': False, 'control_stage_config': {'target': 'cldm.warping_cldm_network.NoZeroConvControlNet', 'params': {'image_size': 32, 'in_channels': 13, 'hint_channels': 3, 'model_channels': 320, 'attention_resolutions': [4, 2, 1], 'num_res_blocks': 2, 'channel_mult': [1, 2, 4, 4], 'num_heads': 8, 'use_spatial_transformer': True, 'transformer_depth': 1, 'context_dim': 768, 'use_checkpoint': True, 'legacy': False, 'cond_first_ch': 4}}, 'unet_config': {'target': 'cldm.warping_cldm_network.StableVITON', 'params': {'image_size': 32, 'in_channels': 13, 'out_channels': 4, 'model_channels': 320, 'attention_resolutions': [4, 2, 1], 'num_res_blocks': 2, 'channel_mult': [1, 2, 4, 4], 'num_heads': 8, 'use_spatial_transformer': True, 'transformer_depth': 1, 'context_dim': 768, 'use_checkpoint': True, 'legacy': False, 'dim_head_denorm': 1}}, 'first_stage_config': {'target': 'ldm.models.autoencoder.AutoencoderKL', 'params': {'embed_dim': 4, 'monitor': 'val/rec_loss', 'ddconfig': {'double_z': True, 'z_channels': 4, 'resolution': 256, 'in_channels': 3, 'out_ch': 3, 'ch': 128, 'ch_mult': [1, 2, 4, 4], 'num_res_blocks': 2, 'attn_resolutions': [], 'dropout': 0.0}, 'lossconfig': {'target': 'torch.nn.Identity'}}}, 'validation_config': {'ddim_steps': 50, 'eta': 0.0, 'scale': 1.0}, 'cond_stage_config': {'target': 'ldm.modules.image_encoders.modules.FrozenCLIPImageEmbedder'}, 'img_H': 512, 'img_W': 384}}, 'dataset_name': 'VITONHDDataset', 'default_prompt': '', 'log_images_kwargs': {'unconditional_guidance_scale': 5.0}}
+ControlLDM: Running in eps-prediction mode
+DiffusionWrapper has 1039.33 M params.
+beta scheduler name : linear
+making attention of type 'vanilla' with 512 in_channels
+Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+making attention of type 'vanilla' with 512 in_channels
+learnable vector gene
+here
+0/1
+Data shape for PLMS sampling is (1, 4, 64, 48)
+Running PLMS Sampling with 1 timesteps
+PLMS Sampler:   0%|          | 0/1 [00:00<?, ?it/s]PLMS Sampler: 100%|██████████| 1/1 [00:35<00:00, 35.19s/it]PLMS Sampler: 100%|██████████| 1/1 [00:35<00:00, 35.19s/it]
+62.67.51.161 - - [16/May/2024 14:42:06] "GET /run_SV/2024-05-16_14-40-43 HTTP/1.1" 200 -
+198.235.24.193 - - [16/May/2024 19:06:00] "[35m[1mGET / HTTP/1.0[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 32, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+167.94.146.52 - - [16/May/2024 19:41:27] code 400, message Bad request version ('À\x14À')
+167.94.146.52 - - [16/May/2024 19:41:27] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03Ì2\x9aðcôlnøÓÓÙ;ç~e\x08;×{}¶ýòç\x17ó\x85¶\x84I\x93 #C~\x8b\x11<-Ð¿JnZ wW\x85\x983½ÃXöýúî1ÚKBh¸\x1e\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+167.94.146.52 - - [16/May/2024 19:41:30] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 32, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+167.94.146.52 - - [16/May/2024 19:41:34] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 32, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+167.94.146.52 - - [16/May/2024 19:41:34] code 505, message Invalid HTTP version (2.0)
+167.94.146.52 - - [16/May/2024 19:41:34] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+ * Serving Flask app 'api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://62.67.51.161:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 242-551-208
+205.210.31.41 - - [16/May/2024 22:36:58] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+165.154.41.213 - - [17/May/2024 00:50:16] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+165.154.41.213 - - [17/May/2024 00:50:17] code 400, message Bad request version ('À\x13À')
+165.154.41.213 - - [17/May/2024 00:50:17] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x1b<ðEV;ßÂè¸¦}µëì¦$MÏÓº!°\x0fîµÛ-X¼Sa èa`vé/\x14h5\x8aÅ:°ÜÚUdãÇÆsÀAè\x94\x9aI()jÜ]\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+165.154.41.213 - - [17/May/2024 00:50:17] code 400, message Bad HTTP/0.9 request type ('t3')
+165.154.41.213 - - [17/May/2024 00:50:17] "[35m[1mt3 12.1.2[0m" HTTPStatus.BAD_REQUEST -
+165.154.206.223 - - [17/May/2024 01:05:53] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+165.154.206.223 - - [17/May/2024 01:05:54] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+165.154.206.223 - - [17/May/2024 01:05:54] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+165.154.206.223 - - [17/May/2024 01:05:54] "[33mGET /sitemap.xml HTTP/1.1[0m" 404 -
+165.154.206.223 - - [17/May/2024 01:05:54] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+162.142.125.226 - - [17/May/2024 02:26:11] code 400, message Bad request version ('À\x14À')
+162.142.125.226 - - [17/May/2024 02:26:11] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03.\x95ý`XU ën¼qQ-\x85\x7f\x07¿\x84Vvé\x0bâ«TQ>\x1f¿Þ\x03( Ó´¸\x10¥\x14ïÔ\x80Û¤¯U~\x149ýB\x10[b^ñÀcÞ)¬|\x8a\x1d\x02\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+162.142.125.226 - - [17/May/2024 02:26:15] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+162.142.125.226 - - [17/May/2024 02:26:20] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+162.142.125.226 - - [17/May/2024 02:26:20] code 505, message Invalid HTTP version (2.0)
+162.142.125.226 - - [17/May/2024 02:26:20] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+199.45.154.78 - - [17/May/2024 05:12:33] code 400, message Bad request version ('À\x14À')
+199.45.154.78 - - [17/May/2024 05:12:33] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03ìWXþÑ\x05¼dÏ+!\x15²ú`åÐ\x0bðª/ô/5\x11t´\x91©â\x80S \x147)\x1cÇ1\x95Æ\x8e\x80;\x06Í\x82\x91ÂÙ\x12¸67A\x9eº³ÙØ\x8cñ'¯û\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+167.94.138.124 - - [17/May/2024 05:42:57] code 400, message Bad request version ('^\xad\x99\x81')
+167.94.138.124 - - [17/May/2024 05:42:57] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03¯\\ÿå\x15w\x17aB\x9f\x0cE\x96\x16ÏÔ\x89\x80ÁîÚªR\x054'\x89µé9³\x98 Ô\x92\x04¯àâ=\x80\x8b÷ÉÝr\x16Ï\x1c^­\x99\x81[0m" HTTPStatus.BAD_REQUEST -
+167.94.138.124 - - [17/May/2024 05:43:00] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+167.94.138.124 - - [17/May/2024 05:43:03] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+167.94.138.124 - - [17/May/2024 05:43:04] code 505, message Invalid HTTP version (2.0)
+167.94.138.124 - - [17/May/2024 05:43:04] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+45.156.129.46 - - [17/May/2024 07:34:27] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+{'model': {'target': 'cldm.cldm.ControlLDM', 'params': {'linear_start': 0.00085, 'linear_end': 0.012, 'num_timesteps_cond': 1, 'log_every_t': 200, 'timesteps': 1000, 'first_stage_key': 'image', 'first_stage_key_cond': ['agn', 'agn_mask', 'image_densepose'], 'cond_stage_key': 'cloth', 'control_key': 'cloth', 'image_size': 64, 'channels': 4, 'cond_stage_trainable': False, 'conditioning_key': 'crossattn', 'monitor': 'val/loss_simple_ema', 'scale_factor': 0.18215, 'use_ema': False, 'only_mid_control': False, 'use_VAEdownsample': True, 'use_lastzc': True, 'use_imageCLIP': True, 'use_pbe_weight': True, 'u_cond_percent': 0.2, 'use_attn_mask': False, 'control_stage_config': {'target': 'cldm.warping_cldm_network.NoZeroConvControlNet', 'params': {'image_size': 32, 'in_channels': 13, 'hint_channels': 3, 'model_channels': 320, 'attention_resolutions': [4, 2, 1], 'num_res_blocks': 2, 'channel_mult': [1, 2, 4, 4], 'num_heads': 8, 'use_spatial_transformer': True, 'transformer_depth': 1, 'context_dim': 768, 'use_checkpoint': True, 'legacy': False, 'cond_first_ch': 4}}, 'unet_config': {'target': 'cldm.warping_cldm_network.StableVITON', 'params': {'image_size': 32, 'in_channels': 13, 'out_channels': 4, 'model_channels': 320, 'attention_resolutions': [4, 2, 1], 'num_res_blocks': 2, 'channel_mult': [1, 2, 4, 4], 'num_heads': 8, 'use_spatial_transformer': True, 'transformer_depth': 1, 'context_dim': 768, 'use_checkpoint': True, 'legacy': False, 'dim_head_denorm': 1}}, 'first_stage_config': {'target': 'ldm.models.autoencoder.AutoencoderKL', 'params': {'embed_dim': 4, 'monitor': 'val/rec_loss', 'ddconfig': {'double_z': True, 'z_channels': 4, 'resolution': 256, 'in_channels': 3, 'out_ch': 3, 'ch': 128, 'ch_mult': [1, 2, 4, 4], 'num_res_blocks': 2, 'attn_resolutions': [], 'dropout': 0.0}, 'lossconfig': {'target': 'torch.nn.Identity'}}}, 'validation_config': {'ddim_steps': 50, 'eta': 0.0, 'scale': 1.0}, 'cond_stage_config': {'target': 'ldm.modules.image_encoders.modules.FrozenCLIPImageEmbedder'}, 'img_H': 512, 'img_W': 384}}, 'dataset_name': 'VITONHDDataset', 'default_prompt': '', 'log_images_kwargs': {'unconditional_guidance_scale': 5.0}}
+No module 'xformers'. Proceeding without it.
+ControlLDM: Running in eps-prediction mode
+DiffusionWrapper has 1039.33 M params.
+beta scheduler name : linear
+making attention of type 'vanilla' with 512 in_channels
+Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+making attention of type 'vanilla' with 512 in_channels
+learnable vector gene
+here
+/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/torchvision/transforms/functional.py:1603: UserWarning: The default value of the antialias parameter of all the resizing transforms (Resize(), RandomResizedCrop(), etc.) will change from None to True in v0.17, in order to be consistent across the PIL and Tensor backends. To suppress this warning, directly pass antialias=True (recommended, future default), antialias=None (current default, which means False for Tensors and True for PIL), or antialias=False (only works on Tensors - PIL will still use antialiasing). This also applies if you are using the inference transforms from the models weights: update the call to weights.transforms(antialias=True).
+  warnings.warn(
+0/1
+Data shape for PLMS sampling is (1, 4, 64, 48)
+Running PLMS Sampling with 50 timesteps
+PLMS Sampler:   0%|          | 0/50 [00:00<?, ?it/s]PLMS Sampler:   2%|▏         | 1/50 [00:31<26:07, 31.98s/it]PLMS Sampler:   4%|▍         | 2/50 [00:47<17:51, 22.33s/it]PLMS Sampler:   6%|▌         | 3/50 [01:03<15:06, 19.28s/it]PLMS Sampler:   8%|▊         | 4/50 [01:17<13:16, 17.31s/it]PLMS Sampler:  10%|█         | 5/50 [01:31<12:12, 16.29s/it]PLMS Sampler:  12%|█▏        | 6/50 [01:46<11:26, 15.61s/it]PLMS Sampler:  14%|█▍        | 7/50 [02:01<11:10, 15.60s/it]PLMS Sampler:  16%|█▌        | 8/50 [02:15<10:30, 15.01s/it]PLMS Sampler:  18%|█▊        | 9/50 [02:29<10:00, 14.66s/it]PLMS Sampler:  20%|██        | 10/50 [02:43<09:40, 14.51s/it]PLMS Sampler:  22%|██▏       | 11/50 [02:58<09:34, 14.74s/it]PLMS Sampler:  24%|██▍       | 12/50 [03:12<09:12, 14.53s/it]PLMS Sampler:  26%|██▌       | 13/50 [03:27<08:56, 14.50s/it]PLMS Sampler:  28%|██▊       | 14/50 [03:41<08:38, 14.40s/it]PLMS Sampler:  30%|███       | 15/50 [03:54<08:13, 14.11s/it]PLMS Sampler:  32%|███▏      | 16/50 [04:07<07:45, 13.68s/it]PLMS Sampler:  34%|███▍      | 17/50 [04:20<07:26, 13.54s/it]PLMS Sampler:  36%|███▌      | 18/50 [04:34<07:16, 13.64s/it]PLMS Sampler:  38%|███▊      | 19/50 [04:49<07:08, 13.82s/it]PLMS Sampler:  40%|████      | 20/50 [05:02<06:56, 13.87s/it]PLMS Sampler:  42%|████▏     | 21/50 [05:16<06:39, 13.79s/it]PLMS Sampler:  44%|████▍     | 22/50 [05:30<06:27, 13.85s/it]PLMS Sampler:  46%|████▌     | 23/50 [05:45<06:24, 14.25s/it]PLMS Sampler:  48%|████▊     | 24/50 [06:00<06:14, 14.38s/it]PLMS Sampler:  50%|█████     | 25/50 [06:15<06:04, 14.60s/it]PLMS Sampler:  52%|█████▏    | 26/50 [06:29<05:48, 14.53s/it]PLMS Sampler:  54%|█████▍    | 27/50 [06:42<05:23, 14.04s/it]PLMS Sampler:  56%|█████▌    | 28/50 [06:56<05:06, 13.94s/it]PLMS Sampler:  58%|█████▊    | 29/50 [07:10<04:52, 13.91s/it]PLMS Sampler:  60%|██████    | 30/50 [07:22<04:28, 13.42s/it]PLMS Sampler:  62%|██████▏   | 31/50 [07:36<04:19, 13.66s/it]PLMS Sampler:  64%|██████▍   | 32/50 [07:49<04:01, 13.44s/it]PLMS Sampler:  66%|██████▌   | 33/50 [08:03<03:47, 13.37s/it]PLMS Sampler:  68%|██████▊   | 34/50 [08:16<03:33, 13.37s/it]PLMS Sampler:  70%|███████   | 35/50 [08:29<03:17, 13.15s/it]PLMS Sampler:  72%|███████▏  | 36/50 [08:42<03:04, 13.16s/it]PLMS Sampler:  74%|███████▍  | 37/50 [08:55<02:50, 13.08s/it]PLMS Sampler:  76%|███████▌  | 38/50 [09:09<02:40, 13.39s/it]PLMS Sampler:  78%|███████▊  | 39/50 [09:22<02:26, 13.27s/it]PLMS Sampler:  80%|████████  | 40/50 [09:35<02:13, 13.34s/it]PLMS Sampler:  82%|████████▏ | 41/50 [09:48<01:58, 13.12s/it]PLMS Sampler:  84%|████████▍ | 42/50 [10:02<01:47, 13.47s/it]PLMS Sampler:  86%|████████▌ | 43/50 [10:15<01:33, 13.42s/it]PLMS Sampler:  88%|████████▊ | 44/50 [10:28<01:19, 13.30s/it]PLMS Sampler:  90%|█████████ | 45/50 [10:41<01:05, 13.13s/it]PLMS Sampler:  92%|█████████▏| 46/50 [10:55<00:53, 13.39s/it]PLMS Sampler:  94%|█████████▍| 47/50 [11:08<00:39, 13.24s/it]PLMS Sampler:  96%|█████████▌| 48/50 [11:22<00:26, 13.36s/it]PLMS Sampler:  98%|█████████▊| 49/50 [11:35<00:13, 13.39s/it]PLMS Sampler: 100%|██████████| 50/50 [11:48<00:00, 13.30s/it]PLMS Sampler: 100%|██████████| 50/50 [11:48<00:00, 14.17s/it]
+62.67.51.161 - - [17/May/2024 09:08:35] "GET /run_SV/2024-05-17_08-55-54 HTTP/1.1" 200 -
+45.227.254.49 - - [17/May/2024 15:02:46] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+45.227.254.49 - - [17/May/2024 15:02:46] "[35m[1m\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+198.235.24.124 - - [17/May/2024 17:52:57] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+198.235.24.164 - - [18/May/2024 02:38:54] "[35m[1mGET / HTTP/1.0[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+174.138.61.44 - - [18/May/2024 04:39:40] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+167.94.145.96 - - [18/May/2024 04:46:43] code 400, message Bad request version ('À\x14À')
+167.94.145.96 - - [18/May/2024 04:46:43] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03¨q£\x11ËmÎðk ´V\x8e):/sq\x03¯\x1e\x878Yè\x06d÷í\x99jç @ÛÈ\x88\x9e|ÐlÑ\x0c¯r\x86ÞA\x9cRWGôÒ\x07ôÊqR­ ö\x9fkS\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+167.94.145.96 - - [18/May/2024 04:46:46] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+167.94.145.96 - - [18/May/2024 04:46:49] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+167.94.145.96 - - [18/May/2024 04:46:49] code 505, message Invalid HTTP version (2.0)
+167.94.145.96 - - [18/May/2024 04:46:49] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+ * Serving Flask app 'api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://62.67.51.161:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 242-551-208
+45.128.232.98 - - [20/May/2024 11:17:18] code 400, message Bad request syntax ('JDWP-Handshake')
+45.128.232.98 - - [20/May/2024 11:17:18] "[35m[1mJDWP-Handshake[0m" HTTPStatus.BAD_REQUEST -
+167.94.138.120 - - [20/May/2024 11:23:11] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+167.94.138.120 - - [20/May/2024 11:23:12] code 505, message Invalid HTTP version (2.0)
+167.94.138.120 - - [20/May/2024 11:23:12] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+205.210.31.205 - - [20/May/2024 14:31:33] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+167.94.138.119 - - [20/May/2024 14:35:52] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+167.94.138.119 - - [20/May/2024 14:35:52] code 505, message Invalid HTTP version (2.0)
+167.94.138.119 - - [20/May/2024 14:35:52] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+162.142.125.215 - - [20/May/2024 14:37:41] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+162.142.125.215 - - [20/May/2024 14:37:42] code 505, message Invalid HTTP version (2.0)
+162.142.125.215 - - [20/May/2024 14:37:42] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+ * Serving Flask app 'api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://62.67.51.161:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 242-551-208
+45.227.254.8 - - [21/May/2024 09:42:46] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+45.227.254.8 - - [21/May/2024 09:42:46] "[35m[1m\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+205.209.125.225 - - [21/May/2024 19:18:27] "[35m[1mHEAD / HTTP/1.0[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+205.209.125.225 - - [21/May/2024 19:37:30] "[35m[1mHEAD / HTTP/1.0[0m" 500 -
+159.65.63.33 - - [22/May/2024 00:18:07] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x03\x01\x9c\x01\x00\x01\x98\x03\x03ª\x83Ö´\x08')
+159.65.63.33 - - [22/May/2024 00:18:07] "[35m[1m\x16\x03\x03\x01\x9c\x01\x00\x01\x98\x03\x03ª\x83Ö´\x08\x1fbTÿóÞ\x04CJ.hYJÿ\x88\x04tâx¹Z!9c[0m" HTTPStatus.BAD_REQUEST -
+159.65.63.33 - - [22/May/2024 00:18:07] code 400, message Bad request version ('\x9d9àü=X@a\x89\x11_Rï\x0f^rÍHXÅï.©Q`ÐKÈÍ£\\H\x00\x8c')
+159.65.63.33 - - [22/May/2024 00:18:07] "[35m[1m\x16\x03\x03\x01\x9c\x01\x00\x01\x98\x03\x03\x18Vx¡â\x88À\x08s\x9bà\x0b\x90z\x0b\x96s7\x1bºð\x17,ÉP¢ò\x14'V­Ó \x9d9àü=X@a\x89\x11_Rï\x0f^rÍHXÅï.©Q`ÐKÈÍ£\\H\x00\x8c[0m" HTTPStatus.BAD_REQUEST -
+159.65.63.33 - - [22/May/2024 00:18:07] code 400, message Bad request version ('\x00HªªÀ\x12À\x07Ì\x14\x13\x01\x13\x02Ì©ÀsÀrÀ,À¯À\xadÀ$À')
+159.65.63.33 - - [22/May/2024 00:18:07] "[35m[1m\x16\x03\x03\x01X\x01\x00\x01T\x03\x03\x00\x89Ó÷|¸O|Ö\x85Zú#$U\x15nX\x1d$¡p\x9d\x95\x879\x9bMà§½] ,?æsÊ\x17=\x1aVäoSÉÖéº/\x8aÀ¨cµj³-\x9fi\x07\x8f\x0bµ\x0b\x00HªªÀ\x12À\x07Ì\x14\x13\x01\x13\x02Ì©ÀsÀrÀ,À¯À­À$À[0m" HTTPStatus.BAD_REQUEST -
+159.65.63.33 - - [22/May/2024 00:18:07] code 400, message Bad request version ("\x13Ì,ØEW,\x9cV¯¤\x8bäJ)ùLOÂ1iÓ~F\x9d&¤Áäÿ\x00FººÀ\x13À'À/À\x14À(À0À`ÀaÀvÀwÌ¨\x13\x05\x13\x04\x13\x03Ì\x13À\x11\x00")
+159.65.63.33 - - [22/May/2024 00:18:07] "[35m[1m\x16\x03\x03\x01J\x01\x00\x01F\x03\x03Ö\x9b`tgÉ§0\x08\\Ø«²\x1d\x9cÙi\x89+,óä\x81oÔ\x18éD\x9aª\x07. N\x1d\x13Ì,ØEW,\x9cV¯¤\x8bäJ)ùLOÂ1iÓ~F\x9d&¤Áäÿ\x00FººÀ\x13À'À/À\x14À(À0À`ÀaÀvÀwÌ¨\x13\x05\x13\x04\x13\x03Ì\x13À\x11\x00[0m" HTTPStatus.BAD_REQUEST -
+159.65.63.33 - - [22/May/2024 00:18:08] code 400, message Bad request version ("P:qÈl\x9a\x04B±\xad\x13õøíütf5\x1b~\x8a\x9f\x96%Ä\x13\x00\x8aÀ\x12À\x13À\x07À'Ì\x14À/\x13\x01À\x14\x13\x02À(Ì©À0ÀsÀ`ÀrÀaÀ,ÀvÀ¯ÀwÀ\xadÌ¨À$\x13\x05À")
+159.65.63.33 - - [22/May/2024 00:18:08] "[35m[1m\x16\x03\x03\x01s\x01\x00\x01o\x03\x03\x1aÃx©\x80j8\x00þÈèE\x13- &¦óv\x9f\x1fÆÕ\x8e\x05r.Ò¯_¸, \x03\x87\x03M\x10 P:qÈl\x9a\x04B±­\x13õøíütf5\x1b~\x8a\x9f\x96%Ä\x13\x00\x8aÀ\x12À\x13À\x07À'Ì\x14À/\x13\x01À\x14\x13\x02À(Ì©À0ÀsÀ`ÀrÀaÀ,ÀvÀ¯ÀwÀ­Ì¨À$\x13\x05À[0m" HTTPStatus.BAD_REQUEST -
+159.65.63.33 - - [22/May/2024 00:18:08] code 400, message Bad request version ('À#À¬À®À+À')
+159.65.63.33 - - [22/May/2024 00:18:08] "[35m[1m\x16\x03\x02\x01\x9c\x01\x00\x01\x98\x03\x02Y(\x94]WgêP3I¦·}ù=Ã\x97«^¨\x0eÉm´ñ·çÚyjR­ ç\x86íhÐÃ\x97Á¥ÂÎ½\x8eÈó¾¯í4yþ\x17-¶h\x0f\x9e\x8cMãá\x1b\x00\x8cZZ\x00\x16\x003\x00gÀ\x9eÀ¢\x00\x9e\x009\x00kÀ\x9fÀ£\x00\x9f\x00E\x00¾\x00\x88\x00Ä\x00\x9aÀ\x08À\x09À#À¬À®À+À[0m" HTTPStatus.BAD_REQUEST -
+159.65.63.33 - - [22/May/2024 00:18:08] code 400, message Bad request version ('À#À¬À®À+À')
+159.65.63.33 - - [22/May/2024 00:18:08] "[35m[1m\x16\x03\x01\x01©\x01\x00\x01¥\x03\x03.\x0dÅûZú\x05|Mr>õyTÓlé\x03Û\x01LÄ\x02Lurk\x0eßÁZÆ ¡\x8a\x9d\x915ái¾ê<\x85¸0²¼ëoqx\x90\x16LPdª»@`\x98èo\x9e\x00\x8c\x9a\x9a\x00\x16\x003\x00gÀ\x9eÀ¢\x00\x9e\x009\x00kÀ\x9fÀ£\x00\x9f\x00E\x00¾\x00\x88\x00Ä\x00\x9aÀ\x08À\x09À#À¬À®À+À[0m" HTTPStatus.BAD_REQUEST -
+159.65.63.33 - - [22/May/2024 00:18:08] code 400, message Bad request version ('À\x9c\x00<\x00/\x00')
+159.65.63.33 - - [22/May/2024 00:18:08] "[35m[1m\x16\x03\x01\x01©\x01\x00\x01¥\x03\x03\x96?\x17Fá\x05F\x86\x9caø`7(\x07\x94¥Ñú\x0b\x08µâ\x91¬®\x08g_\x7f\x1eo àE\x0b\x12K¸®\x13ë!ßRø0Æ\x11l\x00\x8acÃÍZDv\x02\x0e\x11\x04%Ö\x88\x00\x8czz\x00\x05\x00\x04\x00\x07\x00À\x00\x84\x00º\x00A\x00\x9dÀ¡À\x9d\x00=\x005\x00\x9cÀ À\x9c\x00<\x00/\x00[0m" HTTPStatus.BAD_REQUEST -
+159.65.63.33 - - [22/May/2024 00:18:08] code 400, message Bad request version ('À#À¬À®À+À')
+159.65.63.33 - - [22/May/2024 00:18:08] "[35m[1m\x16\x03\x01\x01\x9f\x01\x00\x01\x9b\x03\x03\x0eg¿8¬;¥ ^\x92)!å*\x9bäÎÕýUW´°Ê¡\x15ò\x99Æ\x1c«\x99 KÊTnç¯äZÚáã\x82÷\x11AVº\x18î\x7fþ\x93\x0b\x9b±w\x88L\x0d@ñ2\x00\x82ºº\x00\x16\x003\x00gÀ\x9eÀ¢\x00\x9e\x009\x00kÀ\x9fÀ£\x00\x9f\x00E\x00¾\x00\x88\x00Ä\x00\x9aÀ\x08À\x09À#À¬À®À+À[0m" HTTPStatus.BAD_REQUEST -
+159.65.63.33 - - [22/May/2024 00:18:08] code 400, message Bad request version (";2Áx\x08Õ½'OÉ¯\x13U\x96\x865gH&hð&<J¶Ì¤ë\x9c¾\x00\x8aÀ\x12À\x13À\x07À'Ì\x14À/\x13\x01À\x14\x13\x02À(Ì©À0ÀsÀ`ÀrÀaÀ,ÀvÀ¯ÀwÀ\xadÌ¨À$\x13\x05À")
+159.65.63.33 - - [22/May/2024 00:18:08] "[35m[1m\x16\x03\x01\x01\x8e\x01\x00\x01\x8a\x03\x03#!ÉóSfg~ÔÞ\x1fòQ°\x1c]\x88ïy¢.\x0f\x08âL>£i:ªZä ½\x0d;2Áx\x08Õ½'OÉ¯\x13U\x96\x865gH&hð&<J¶Ì¤ë\x9c¾\x00\x8aÀ\x12À\x13À\x07À'Ì\x14À/\x13\x01À\x14\x13\x02À(Ì©À0ÀsÀ`ÀrÀaÀ,ÀvÀ¯ÀwÀ­Ì¨À$\x13\x05À[0m" HTTPStatus.BAD_REQUEST -
+64.227.42.8 - - [22/May/2024 00:33:43] code 400, message Bad request version ("ø,Ó'Êf°Ë\x8a@\x00\x01<Ì\x14Ì\x13Ì\x15À0À,À(À$À\x14À")
+64.227.42.8 - - [22/May/2024 00:33:43] "[35m[1m\x16\x03\x01\x01û\x01\x00\x01÷\x03\x03\x982sûøBSLVeÊ\x1d;[ÚÑi\x82\x1eCÎ\x0dø,Ó'Êf°Ë\x8a@\x00\x01<Ì\x14Ì\x13Ì\x15À0À,À(À$À\x14À[0m" HTTPStatus.BAD_REQUEST -
+198.235.24.136 - - [22/May/2024 02:44:58] "[35m[1mGET / HTTP/1.0[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+167.94.146.48 - - [22/May/2024 02:49:29] code 400, message Bad request version ('À\x14À')
+167.94.146.48 - - [22/May/2024 02:49:29] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x06)\x19bëúìÉò÷[÷ö¢Ï\x9a\x0b¯;\x14³'\x1e¯ÓiZ\x98\x80Hâ\x13 \\XËýy\x8e­ú£ßÜo73\x9fU3\x8b`\x1fÁªQO°ÖOT\x87¥³±\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+167.94.146.48 - - [22/May/2024 02:49:32] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+167.94.146.48 - - [22/May/2024 02:49:35] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+167.94.146.48 - - [22/May/2024 02:49:35] code 505, message Invalid HTTP version (2.0)
+167.94.146.48 - - [22/May/2024 02:49:35] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+167.248.133.121 - - [22/May/2024 03:39:00] code 400, message Bad request version ('À\x14À')
+167.248.133.121 - - [22/May/2024 03:39:00] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x98ÀP\x98w¯£\x1cQã\x8dg*ØJõÂÚÙ6MHXÎ\x13\x9f¬TÄ\x9ebÂ êA\x03\x09)\x96ä\\ÄVqa¬8lN¹\x90Xéâ9\x1b\x08Ü\x9d»\x9c[c ë\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+167.248.133.121 - - [22/May/2024 03:39:04] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+167.248.133.121 - - [22/May/2024 03:39:08] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+167.248.133.121 - - [22/May/2024 03:39:09] code 505, message Invalid HTTP version (2.0)
+167.248.133.121 - - [22/May/2024 03:39:09] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+{'model': {'target': 'cldm.cldm.ControlLDM', 'params': {'linear_start': 0.00085, 'linear_end': 0.012, 'num_timesteps_cond': 1, 'log_every_t': 200, 'timesteps': 1000, 'first_stage_key': 'image', 'first_stage_key_cond': ['agn', 'agn_mask', 'image_densepose'], 'cond_stage_key': 'cloth', 'control_key': 'cloth', 'image_size': 64, 'channels': 4, 'cond_stage_trainable': False, 'conditioning_key': 'crossattn', 'monitor': 'val/loss_simple_ema', 'scale_factor': 0.18215, 'use_ema': False, 'only_mid_control': False, 'use_VAEdownsample': True, 'use_lastzc': True, 'use_imageCLIP': True, 'use_pbe_weight': True, 'u_cond_percent': 0.2, 'use_attn_mask': False, 'control_stage_config': {'target': 'cldm.warping_cldm_network.NoZeroConvControlNet', 'params': {'image_size': 32, 'in_channels': 13, 'hint_channels': 3, 'model_channels': 320, 'attention_resolutions': [4, 2, 1], 'num_res_blocks': 2, 'channel_mult': [1, 2, 4, 4], 'num_heads': 8, 'use_spatial_transformer': True, 'transformer_depth': 1, 'context_dim': 768, 'use_checkpoint': True, 'legacy': False, 'cond_first_ch': 4}}, 'unet_config': {'target': 'cldm.warping_cldm_network.StableVITON', 'params': {'image_size': 32, 'in_channels': 13, 'out_channels': 4, 'model_channels': 320, 'attention_resolutions': [4, 2, 1], 'num_res_blocks': 2, 'channel_mult': [1, 2, 4, 4], 'num_heads': 8, 'use_spatial_transformer': True, 'transformer_depth': 1, 'context_dim': 768, 'use_checkpoint': True, 'legacy': False, 'dim_head_denorm': 1}}, 'first_stage_config': {'target': 'ldm.models.autoencoder.AutoencoderKL', 'params': {'embed_dim': 4, 'monitor': 'val/rec_loss', 'ddconfig': {'double_z': True, 'z_channels': 4, 'resolution': 256, 'in_channels': 3, 'out_ch': 3, 'ch': 128, 'ch_mult': [1, 2, 4, 4], 'num_res_blocks': 2, 'attn_resolutions': [], 'dropout': 0.0}, 'lossconfig': {'target': 'torch.nn.Identity'}}}, 'validation_config': {'ddim_steps': 50, 'eta': 0.0, 'scale': 1.0}, 'cond_stage_config': {'target': 'ldm.modules.image_encoders.modules.FrozenCLIPImageEmbedder'}, 'img_H': 512, 'img_W': 384}}, 'dataset_name': 'VITONHDDataset', 'default_prompt': '', 'log_images_kwargs': {'unconditional_guidance_scale': 5.0}}
+No module 'xformers'. Proceeding without it.
+ControlLDM: Running in eps-prediction mode
+DiffusionWrapper has 1039.33 M params.
+beta scheduler name : linear
+making attention of type 'vanilla' with 512 in_channels
+Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+making attention of type 'vanilla' with 512 in_channels
+learnable vector gene
+here
+/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/torchvision/transforms/functional.py:1603: UserWarning: The default value of the antialias parameter of all the resizing transforms (Resize(), RandomResizedCrop(), etc.) will change from None to True in v0.17, in order to be consistent across the PIL and Tensor backends. To suppress this warning, directly pass antialias=True (recommended, future default), antialias=None (current default, which means False for Tensors and True for PIL), or antialias=False (only works on Tensors - PIL will still use antialiasing). This also applies if you are using the inference transforms from the models weights: update the call to weights.transforms(antialias=True).
+  warnings.warn(
+0/1
+Data shape for PLMS sampling is (1, 4, 64, 48)
+Running PLMS Sampling with 50 timesteps
+PLMS Sampler:   0%|          | 0/50 [00:00<?, ?it/s]PLMS Sampler:   2%|▏         | 1/50 [00:35<28:41, 35.14s/it]PLMS Sampler:   4%|▍         | 2/50 [00:50<19:01, 23.78s/it]PLMS Sampler:   6%|▌         | 3/50 [01:06<15:48, 20.18s/it]PLMS Sampler:   8%|▊         | 4/50 [01:23<14:21, 18.73s/it]PLMS Sampler:  10%|█         | 5/50 [01:38<13:11, 17.58s/it]PLMS Sampler:  12%|█▏        | 6/50 [01:55<12:32, 17.11s/it]PLMS Sampler:  14%|█▍        | 7/50 [02:11<12:01, 16.79s/it]PLMS Sampler:  16%|█▌        | 8/50 [02:27<11:34, 16.53s/it]PLMS Sampler:  18%|█▊        | 9/50 [02:42<11:07, 16.27s/it]PLMS Sampler:  20%|██        | 10/50 [02:58<10:36, 15.92s/it]PLMS Sampler:  22%|██▏       | 11/50 [03:12<10:07, 15.57s/it]PLMS Sampler:  24%|██▍       | 12/50 [03:28<09:58, 15.75s/it]PLMS Sampler:  26%|██▌       | 13/50 [03:44<09:44, 15.80s/it]PLMS Sampler:  28%|██▊       | 14/50 [04:00<09:21, 15.60s/it]PLMS Sampler:  30%|███       | 15/50 [04:15<09:02, 15.51s/it]PLMS Sampler:  32%|███▏      | 16/50 [04:30<08:47, 15.50s/it]PLMS Sampler:  34%|███▍      | 17/50 [04:45<08:20, 15.16s/it]PLMS Sampler:  36%|███▌      | 18/50 [04:59<07:59, 14.97s/it]PLMS Sampler:  38%|███▊      | 19/50 [05:15<07:50, 15.19s/it]PLMS Sampler:  40%|████      | 20/50 [05:31<07:41, 15.39s/it]PLMS Sampler:  42%|████▏     | 21/50 [05:46<07:26, 15.41s/it]PLMS Sampler:  44%|████▍     | 22/50 [06:02<07:14, 15.50s/it]PLMS Sampler:  46%|████▌     | 23/50 [06:17<06:57, 15.47s/it]PLMS Sampler:  48%|████▊     | 24/50 [06:32<06:38, 15.34s/it]PLMS Sampler:  50%|█████     | 25/50 [06:46<06:11, 14.84s/it]PLMS Sampler:  52%|█████▏    | 26/50 [07:02<06:02, 15.11s/it]PLMS Sampler:  54%|█████▍    | 27/50 [07:18<05:51, 15.29s/it]PLMS Sampler:  56%|█████▌    | 28/50 [07:32<05:33, 15.17s/it]PLMS Sampler:  58%|█████▊    | 29/50 [07:48<05:21, 15.31s/it]PLMS Sampler:  60%|██████    | 30/50 [08:04<05:07, 15.40s/it]PLMS Sampler:  62%|██████▏   | 31/50 [08:19<04:53, 15.43s/it]PLMS Sampler:  64%|██████▍   | 32/50 [08:34<04:37, 15.40s/it]PLMS Sampler:  66%|██████▌   | 33/50 [08:50<04:21, 15.39s/it]PLMS Sampler:  68%|██████▊   | 34/50 [09:05<04:06, 15.40s/it]PLMS Sampler:  70%|███████   | 35/50 [09:20<03:49, 15.27s/it]PLMS Sampler:  72%|███████▏  | 36/50 [09:44<04:07, 17.69s/it]PLMS Sampler:  74%|███████▍  | 37/50 [10:14<04:38, 21.45s/it]PLMS Sampler:  76%|███████▌  | 38/50 [10:43<04:46, 23.89s/it]PLMS Sampler:  78%|███████▊  | 39/50 [11:12<04:37, 25.24s/it]PLMS Sampler:  80%|████████  | 40/50 [11:40<04:22, 26.26s/it]PLMS Sampler:  82%|████████▏ | 41/50 [12:04<03:48, 25.41s/it]PLMS Sampler:  84%|████████▍ | 42/50 [12:20<03:01, 22.69s/it]PLMS Sampler:  86%|████████▌ | 43/50 [12:36<02:24, 20.60s/it]PLMS Sampler:  88%|████████▊ | 44/50 [12:50<01:52, 18.76s/it]PLMS Sampler:  90%|█████████ | 45/50 [13:06<01:29, 17.86s/it]PLMS Sampler:  92%|█████████▏| 46/50 [13:21<01:07, 16.86s/it]PLMS Sampler:  94%|█████████▍| 47/50 [13:36<00:49, 16.43s/it]PLMS Sampler:  96%|█████████▌| 48/50 [13:52<00:32, 16.13s/it]PLMS Sampler:  98%|█████████▊| 49/50 [14:08<00:16, 16.14s/it]PLMS Sampler: 100%|██████████| 50/50 [14:23<00:00, 16.04s/it]PLMS Sampler: 100%|██████████| 50/50 [14:23<00:00, 17.28s/it]
+62.67.51.161 - - [22/May/2024 07:29:21] "GET /run_SV/2024-05-22_07-14-10 HTTP/1.1" 200 -
+{'text': 'processed in 907.18 seconds'}
+{'model': {'target': 'cldm.cldm.ControlLDM', 'params': {'linear_start': 0.00085, 'linear_end': 0.012, 'num_timesteps_cond': 1, 'log_every_t': 200, 'timesteps': 1000, 'first_stage_key': 'image', 'first_stage_key_cond': ['agn', 'agn_mask', 'image_densepose'], 'cond_stage_key': 'cloth', 'control_key': 'cloth', 'image_size': 64, 'channels': 4, 'cond_stage_trainable': False, 'conditioning_key': 'crossattn', 'monitor': 'val/loss_simple_ema', 'scale_factor': 0.18215, 'use_ema': False, 'only_mid_control': False, 'use_VAEdownsample': True, 'use_lastzc': True, 'use_imageCLIP': True, 'use_pbe_weight': True, 'u_cond_percent': 0.2, 'use_attn_mask': False, 'control_stage_config': {'target': 'cldm.warping_cldm_network.NoZeroConvControlNet', 'params': {'image_size': 32, 'in_channels': 13, 'hint_channels': 3, 'model_channels': 320, 'attention_resolutions': [4, 2, 1], 'num_res_blocks': 2, 'channel_mult': [1, 2, 4, 4], 'num_heads': 8, 'use_spatial_transformer': True, 'transformer_depth': 1, 'context_dim': 768, 'use_checkpoint': True, 'legacy': False, 'cond_first_ch': 4}}, 'unet_config': {'target': 'cldm.warping_cldm_network.StableVITON', 'params': {'image_size': 32, 'in_channels': 13, 'out_channels': 4, 'model_channels': 320, 'attention_resolutions': [4, 2, 1], 'num_res_blocks': 2, 'channel_mult': [1, 2, 4, 4], 'num_heads': 8, 'use_spatial_transformer': True, 'transformer_depth': 1, 'context_dim': 768, 'use_checkpoint': True, 'legacy': False, 'dim_head_denorm': 1}}, 'first_stage_config': {'target': 'ldm.models.autoencoder.AutoencoderKL', 'params': {'embed_dim': 4, 'monitor': 'val/rec_loss', 'ddconfig': {'double_z': True, 'z_channels': 4, 'resolution': 256, 'in_channels': 3, 'out_ch': 3, 'ch': 128, 'ch_mult': [1, 2, 4, 4], 'num_res_blocks': 2, 'attn_resolutions': [], 'dropout': 0.0}, 'lossconfig': {'target': 'torch.nn.Identity'}}}, 'validation_config': {'ddim_steps': 50, 'eta': 0.0, 'scale': 1.0}, 'cond_stage_config': {'target': 'ldm.modules.image_encoders.modules.FrozenCLIPImageEmbedder'}, 'img_H': 512, 'img_W': 384}}, 'dataset_name': 'VITONHDDataset', 'default_prompt': '', 'log_images_kwargs': {'unconditional_guidance_scale': 5.0}}
+ControlLDM: Running in eps-prediction mode
+DiffusionWrapper has 1039.33 M params.
+beta scheduler name : linear
+making attention of type 'vanilla' with 512 in_channels
+Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+making attention of type 'vanilla' with 512 in_channels
+learnable vector gene
+here
+/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/torchvision/transforms/functional.py:1603: UserWarning: The default value of the antialias parameter of all the resizing transforms (Resize(), RandomResizedCrop(), etc.) will change from None to True in v0.17, in order to be consistent across the PIL and Tensor backends. To suppress this warning, directly pass antialias=True (recommended, future default), antialias=None (current default, which means False for Tensors and True for PIL), or antialias=False (only works on Tensors - PIL will still use antialiasing). This also applies if you are using the inference transforms from the models weights: update the call to weights.transforms(antialias=True).
+  warnings.warn(
+0/1
+Data shape for PLMS sampling is (1, 4, 64, 48)
+Running PLMS Sampling with 50 timesteps
+PLMS Sampler:   0%|          | 0/50 [00:00<?, ?it/s]198.235.24.10 - - [22/May/2024 09:18:50] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+PLMS Sampler:   2%|▏         | 1/50 [00:43<35:08, 43.03s/it]PLMS Sampler:   4%|▍         | 2/50 [00:59<21:45, 27.20s/it]PLMS Sampler:   6%|▌         | 3/50 [01:13<16:47, 21.44s/it]PLMS Sampler:   8%|▊         | 4/50 [01:28<14:23, 18.78s/it]PLMS Sampler:  10%|█         | 5/50 [01:42<12:44, 16.99s/it]PLMS Sampler:  12%|█▏        | 6/50 [01:56<11:41, 15.95s/it]PLMS Sampler:  14%|█▍        | 7/50 [02:09<10:55, 15.25s/it]PLMS Sampler:  16%|█▌        | 8/50 [02:22<10:06, 14.44s/it]PLMS Sampler:  18%|█▊        | 9/50 [02:35<09:31, 13.93s/it]PLMS Sampler:  20%|██        | 10/50 [02:48<09:07, 13.68s/it]PLMS Sampler:  22%|██▏       | 11/50 [03:01<08:42, 13.40s/it]PLMS Sampler:  24%|██▍       | 12/50 [03:15<08:40, 13.70s/it]PLMS Sampler:  26%|██▌       | 13/50 [03:29<08:31, 13.83s/it]PLMS Sampler:  28%|██▊       | 14/50 [03:44<08:26, 14.06s/it]PLMS Sampler:  30%|███       | 15/50 [03:58<08:07, 13.92s/it]PLMS Sampler:  32%|███▏      | 16/50 [04:12<07:53, 13.93s/it]PLMS Sampler:  34%|███▍      | 17/50 [04:25<07:38, 13.89s/it]PLMS Sampler:  36%|███▌      | 18/50 [04:39<07:20, 13.77s/it]PLMS Sampler:  38%|███▊      | 19/50 [04:52<07:03, 13.68s/it]PLMS Sampler:  40%|████      | 20/50 [05:04<06:34, 13.13s/it]PLMS Sampler:  42%|████▏     | 21/50 [05:18<06:25, 13.28s/it]PLMS Sampler:  44%|████▍     | 22/50 [05:31<06:08, 13.18s/it]PLMS Sampler:  46%|████▌     | 23/50 [05:43<05:50, 13.00s/it]PLMS Sampler:  48%|████▊     | 24/50 [05:56<05:37, 12.98s/it]PLMS Sampler:  50%|█████     | 25/50 [06:09<05:22, 12.90s/it]PLMS Sampler:  52%|█████▏    | 26/50 [06:22<05:12, 13.03s/it]PLMS Sampler:  54%|█████▍    | 27/50 [06:35<04:58, 12.97s/it]PLMS Sampler:  56%|█████▌    | 28/50 [06:48<04:42, 12.85s/it]PLMS Sampler:  58%|█████▊    | 29/50 [07:01<04:31, 12.94s/it]PLMS Sampler:  60%|██████    | 30/50 [07:13<04:15, 12.77s/it]PLMS Sampler:  62%|██████▏   | 31/50 [07:26<04:05, 12.90s/it]PLMS Sampler:  64%|██████▍   | 32/50 [07:40<03:55, 13.09s/it]PLMS Sampler:  66%|██████▌   | 33/50 [07:53<03:39, 12.93s/it]PLMS Sampler:  68%|██████▊   | 34/50 [08:06<03:28, 13.03s/it]PLMS Sampler:  70%|███████   | 35/50 [08:18<03:12, 12.84s/it]PLMS Sampler:  72%|███████▏  | 36/50 [08:31<02:58, 12.77s/it]PLMS Sampler:  74%|███████▍  | 37/50 [08:44<02:49, 13.03s/it]PLMS Sampler:  76%|███████▌  | 38/50 [08:58<02:36, 13.07s/it]PLMS Sampler:  78%|███████▊  | 39/50 [09:11<02:23, 13.09s/it]PLMS Sampler:  80%|████████  | 40/50 [09:23<02:09, 12.91s/it]PLMS Sampler:  82%|████████▏ | 41/50 [09:37<01:58, 13.12s/it]PLMS Sampler:  84%|████████▍ | 42/50 [09:51<01:46, 13.31s/it]PLMS Sampler:  86%|████████▌ | 43/50 [10:04<01:33, 13.33s/it]PLMS Sampler:  88%|████████▊ | 44/50 [10:16<01:17, 12.98s/it]PLMS Sampler:  90%|█████████ | 45/50 [10:29<01:05, 13.10s/it]PLMS Sampler:  92%|█████████▏| 46/50 [10:43<00:53, 13.30s/it]PLMS Sampler:  94%|█████████▍| 47/50 [10:57<00:40, 13.52s/it]PLMS Sampler:  96%|█████████▌| 48/50 [11:11<00:26, 13.45s/it]PLMS Sampler:  98%|█████████▊| 49/50 [11:24<00:13, 13.38s/it]PLMS Sampler: 100%|██████████| 50/50 [11:37<00:00, 13.29s/it]PLMS Sampler: 100%|██████████| 50/50 [11:37<00:00, 13.95s/it]
+62.67.51.161 - - [22/May/2024 09:30:08] "GET /run_SV/2024-05-22_09-17-47 HTTP/1.1" 200 -
+103.56.61.144 - - [22/May/2024 18:30:33] "[35m[1mGET / HTTP/1.0[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+103.56.61.144 - - [22/May/2024 18:30:34] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+103.56.61.144 - - [22/May/2024 18:30:34] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+103.56.61.144 - - [22/May/2024 18:30:35] "[33mGET /.well-known/security.txt HTTP/1.1[0m" 404 -
+199.45.154.69 - - [22/May/2024 23:02:03] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+199.45.154.69 - - [22/May/2024 23:02:11] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+199.45.154.69 - - [22/May/2024 23:02:13] code 505, message Invalid HTTP version (2.0)
+199.45.154.69 - - [22/May/2024 23:02:13] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+198.235.24.221 - - [22/May/2024 23:38:43] "[35m[1mGET / HTTP/1.0[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+167.94.138.122 - - [22/May/2024 23:40:00] code 400, message Bad request version ('À\x14À')
+167.94.138.122 - - [22/May/2024 23:40:00] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03Ý$\x86÷¨Ü\x09£o\x95>\x036å´l\x95~âÿþÝýGàùè²1²\x9bè þ\x16Í\x0bþý[(ÊQjtGZî\x1d,N³\x95ê]Æ7õ)¹dã( b\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+167.94.138.122 - - [22/May/2024 23:40:03] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+167.94.138.122 - - [22/May/2024 23:40:06] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+167.94.138.122 - - [22/May/2024 23:40:07] code 505, message Invalid HTTP version (2.0)
+167.94.138.122 - - [22/May/2024 23:40:07] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+167.94.138.43 - - [22/May/2024 23:51:55] code 400, message Bad request version ('À\x14À')
+167.94.138.43 - - [22/May/2024 23:51:55] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x8b¥ö\x9f}t¨\x98åXXÙêSº¼aF§âë\x8f\x0fyÐ\x84\x17\x04É\x1a\x0e® «\x98¶ê\x0f\x1f2gÙ¾\x04\x0cjÃöyØ_Í\x14'"p\x0f*k">\x8d=_\x82\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+167.94.138.43 - - [22/May/2024 23:51:59] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+167.94.138.43 - - [22/May/2024 23:52:02] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+167.94.138.43 - - [22/May/2024 23:52:02] code 505, message Invalid HTTP version (2.0)
+167.94.138.43 - - [22/May/2024 23:52:02] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+138.68.167.171 - - [23/May/2024 00:09:33] code 400, message Bad request version ('À#À¬À®À+À')
+138.68.167.171 - - [23/May/2024 00:09:33] "[35m[1m\x16\x03\x03\x01\x9c\x01\x00\x01\x98\x03\x03,G\x83WÑÿ«\x16ºªË\x0f÷!¹¤\x18ª\x05\x10µ]%Ú\x1d\x16\x8cf\x9eXöA }\x98(fÅ ´\x80h¹\x85\x14u\x13\x87\x1eoì±\x9e\x94ÉS2Æ^E\x1c-|\x9d¬\x00\x8czz\x00\x16\x003\x00gÀ\x9eÀ¢\x00\x9e\x009\x00kÀ\x9fÀ£\x00\x9f\x00E\x00¾\x00\x88\x00Ä\x00\x9aÀ\x08À\x09À#À¬À®À+À[0m" HTTPStatus.BAD_REQUEST -
+138.68.167.171 - - [23/May/2024 00:09:34] code 400, message Bad request syntax ('\x16\x03\x03\x01\x9c\x01\x00\x01\x98\x03\x03')
+138.68.167.171 - - [23/May/2024 00:09:34] "[35m[1m\x16\x03\x03\x01\x9c\x01\x00\x01\x98\x03\x03[0m" HTTPStatus.BAD_REQUEST -
+138.68.167.171 - - [23/May/2024 00:09:34] code 400, message Bad request version ("æ©'¿KXÛà¥\x8cKAR\x01¾Ù²:¶,\x00H\x1a\x1aÀ\x12À\x07Ì\x14\x13\x01\x13\x02Ì©ÀsÀrÀ,À¯À\xadÀ$À")
+138.68.167.171 - - [23/May/2024 00:09:34] "[35m[1m\x16\x03\x03\x01X\x01\x00\x01T\x03\x03ú,\x9f,\x0bñw\x02,1ÚÁ`\x15Ê½®;wÖ@ß\x9e)Ýtú\x99iÑôÈ ã[«³6pû\x99\x1a\x95\x12\x0cæ©'¿KXÛà¥\x8cKAR\x01¾Ù²:¶,\x00H\x1a\x1aÀ\x12À\x07Ì\x14\x13\x01\x13\x02Ì©ÀsÀrÀ,À¯À­À$À[0m" HTTPStatus.BAD_REQUEST -
+138.68.167.171 - - [23/May/2024 00:09:34] code 400, message Bad request version ("´µ\x9b\x00FººÀ\x13À'À/À\x14À(À0À`ÀaÀvÀwÌ¨\x13\x05\x13\x04\x13\x03Ì\x13À\x11\x00")
+138.68.167.171 - - [23/May/2024 00:09:34] "[35m[1m\x16\x03\x03\x01J\x01\x00\x01F\x03\x03áÂ¢Sw\x1aº?AÈ¶\x1aÃ\x97\x80\x07jSªUP\x81Á¹=\x03ð\x14\x0c\x8dèC ÀºÆ\x1e\x7f\x12`<\x18\x1eaBþN7\x14ï\x97í\x80ì\x0d\\\x1c(`Æ}\x1d´µ\x9b\x00FººÀ\x13À'À/À\x14À(À0À`ÀaÀvÀwÌ¨\x13\x05\x13\x04\x13\x03Ì\x13À\x11\x00[0m" HTTPStatus.BAD_REQUEST -
+138.68.167.171 - - [23/May/2024 00:09:34] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x03\x01s\x01\x00\x01o\x03\x03\x15F\x8b.0Ë\x03y[\x95óGX©ù\xadÒK¸\x07W\x19:¢zt7¼ÿìÇ¿')
+138.68.167.171 - - [23/May/2024 00:09:34] "[35m[1m\x16\x03\x03\x01s\x01\x00\x01o\x03\x03\x15F\x8b.0Ë\x03y[\x95óGX©ù­ÒK¸\x07W\x19:¢zt7¼ÿìÇ¿ @Wí\x99ö6-e1RÇÃ)ß:~ð\x9eOã\x7fI¸\x1aLr\x05«5À\x81#\x00\x8aÀ\x12À\x13À\x07À'Ì\x14À/\x13\x01À\x14\x13\x02À(Ì©À0ÀsÀ`ÀrÀaÀ,ÀvÀ¯ÀwÀ­Ì¨À$\x13\x05À[0m" HTTPStatus.BAD_REQUEST -
+138.68.167.171 - - [23/May/2024 00:09:34] code 400, message Bad request version ('À#À¬À®À+À')
+138.68.167.171 - - [23/May/2024 00:09:34] "[35m[1m\x16\x03\x02\x01\x9c\x01\x00\x01\x98\x03\x02)TXh$µe®\x11@ñëKñå5Ê"R'\x9cÚ*¨E\x97÷a\x9eîÈé '×tUÎéù\x81\x80\x10@{³tó\x85ò7±.µ´<_ï\x9b~|\x92Ã\x81a\x00\x8czz\x00\x16\x003\x00gÀ\x9eÀ¢\x00\x9e\x009\x00kÀ\x9fÀ£\x00\x9f\x00E\x00¾\x00\x88\x00Ä\x00\x9aÀ\x08À\x09À#À¬À®À+À[0m" HTTPStatus.BAD_REQUEST -
+138.68.167.171 - - [23/May/2024 00:09:34] code 400, message Bad request version ('À#À¬À®À+À')
+138.68.167.171 - - [23/May/2024 00:09:34] "[35m[1m\x16\x03\x01\x01©\x01\x00\x01¥\x03\x03ù³\x0f\x8d\x8c\x1cþã\x9f£n¶\x19ê\x0eÑ®Ïïqeu¸\x1c5Um¹Ô`\x1bw \x19Õ\x8eÃ\x83C`ÔÛ\x81|Îßk¿ ¹¦Ísh@\x80\x8a\x18\x01-\x1c\x02tÆI\x00\x8cÚÚ\x00\x16\x003\x00gÀ\x9eÀ¢\x00\x9e\x009\x00kÀ\x9fÀ£\x00\x9f\x00E\x00¾\x00\x88\x00Ä\x00\x9aÀ\x08À\x09À#À¬À®À+À[0m" HTTPStatus.BAD_REQUEST -
+138.68.167.171 - - [23/May/2024 00:09:35] code 400, message Bad request version ('À\x9c\x00<\x00/\x00')
+138.68.167.171 - - [23/May/2024 00:09:35] "[35m[1m\x16\x03\x01\x01©\x01\x00\x01¥\x03\x03\x9ecFË3^GP²=7TíÚc\x13\x91\x98Ð\x14<\x82Ù~¤\x16ª¥1Øt\\ >)\x95"êSíÑð¦z\x0d\x9cs@e\x1e\x11\x86÷\x90Ëù\x86\x80\x14\x7fÈ\x08´î¢\x00\x8cÊÊ\x00\x05\x00\x04\x00\x07\x00À\x00\x84\x00º\x00A\x00\x9dÀ¡À\x9d\x00=\x005\x00\x9cÀ À\x9c\x00<\x00/\x00[0m" HTTPStatus.BAD_REQUEST -
+138.68.167.171 - - [23/May/2024 00:09:35] code 400, message Bad request version ('À#À¬À®À+À')
+138.68.167.171 - - [23/May/2024 00:09:35] "[35m[1m\x16\x03\x01\x01\x9f\x01\x00\x01\x9b\x03\x03-"\x87O8qf§¸ºÿïß,¾V¼öSe«\x7fr¥¤4¨V×\x8d°Ñ ?­\x07>7-u+ds=éìÖ\x0eýãÆõ¥\x8aÝ\x12\x9a[2\x06µ\\¦\x90p\x00\x82::\x00\x16\x003\x00gÀ\x9eÀ¢\x00\x9e\x009\x00kÀ\x9fÀ£\x00\x9f\x00E\x00¾\x00\x88\x00Ä\x00\x9aÀ\x08À\x09À#À¬À®À+À[0m" HTTPStatus.BAD_REQUEST -
+138.68.167.171 - - [23/May/2024 00:09:35] code 400, message Bad request version ("j¢Ï;Û3³á\x97EÞb¾'©uAN!um··´JÉ\x8a\x9cò°´\x93\x00\x8aÀ\x12À\x13À\x07À'Ì\x14À/\x13\x01À\x14\x13\x02À(Ì©À0ÀsÀ`ÀrÀaÀ,ÀvÀ¯ÀwÀ\xadÌ¨À$\x13\x05À")
+138.68.167.171 - - [23/May/2024 00:09:35] "[35m[1m\x16\x03\x01\x01\x8e\x01\x00\x01\x8a\x03\x03¿ï°Á/\x97Õ-\x1aZ\x1b\x12\x1cBH÷èã«Ú\x17\x19 'þ\x81UN\x1d¯³À j¢Ï;Û3³á\x97EÞb¾'©uAN!um··´JÉ\x8a\x9cò°´\x93\x00\x8aÀ\x12À\x13À\x07À'Ì\x14À/\x13\x01À\x14\x13\x02À(Ì©À0ÀsÀ`ÀrÀaÀ,ÀvÀ¯ÀwÀ­Ì¨À$\x13\x05À[0m" HTTPStatus.BAD_REQUEST -
+155.133.23.58 - - [23/May/2024 00:22:06] "[35m[1mGET / HTTP/1.0[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+167.94.145.99 - - [23/May/2024 01:41:08] code 400, message Bad request version ('À\x14À')
+167.94.145.99 - - [23/May/2024 01:41:08] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x1b7T\x92Ö\x88JÆÌÞ\x9a ÂÒ\x98ß\x1cDó\x06ämK5BÞkÍ\x09w;¹ îuú\x9fcÙ\x88\x87\x15UT\x16\x82\x16æDJZK¦+t\x05\x98\x9f\x7f\x9c\x812ÔÊ-\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+167.94.145.99 - - [23/May/2024 01:41:11] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+167.94.145.99 - - [23/May/2024 01:41:14] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+167.94.145.99 - - [23/May/2024 01:41:14] code 505, message Invalid HTTP version (2.0)
+167.94.145.99 - - [23/May/2024 01:41:14] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+198.235.24.223 - - [23/May/2024 06:16:20] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1488, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1466, in wsgi_app
+    response = self.handle_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/media/HDD2/VITON/StableVITON_git/StableVITON/api.py", line 34, in index
+    return render_template('index.html')
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "/media/HDD2/VITON/anaconda/envs/StableVITON/lib/python3.10/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+67.70.237.204 - - [23/May/2024 09:34:52] code 400, message Bad request version ("\x01\x8e\x19§YX4,îðÃ\x97hoç4\x08t»mâ\x13¯ÒaxØ\xadÑ\x99µT\x00Þ\x13\x01\x13\x02\x13\x03\x13\x04\x13\x05À,À0\x00£\x00\x9fÌ©Ì¨ÌªÀ¯À\xadÀ£À\x9fÀ]ÀaÀWÀS\x00§À+À/\x00¢\x00\x9eÀ®À¬À¢À\x9eÀ\\À`ÀVÀR\x00¦À$À(\x00k\x00jÀsÀw\x00Ä\x00Ã\x00m\x00ÅÀ#À'\x00g\x00@ÀrÀv\x00¾\x00½\x00l\x00¿À")
+67.70.237.204 - - [23/May/2024 09:34:52] "[35m[1m\x16\x03\x01\x01À\x01\x00\x01¼\x03\x03\x89\x90.ðÚìU°\x92£ÙÏ¶i\x05¢\x08\x92Ú\x8c¶èÔ\x89@\x1de\x0cö\x7f\x10\x1f \x01\x8e\x19§YX4,îðÃ\x97hoç4\x08t»mâ\x13¯ÒaxØ­Ñ\x99µT\x00Þ\x13\x01\x13\x02\x13\x03\x13\x04\x13\x05À,À0\x00£\x00\x9fÌ©Ì¨ÌªÀ¯À­À£À\x9fÀ]ÀaÀWÀS\x00§À+À/\x00¢\x00\x9eÀ®À¬À¢À\x9eÀ\\À`ÀVÀR\x00¦À$À(\x00k\x00jÀsÀw\x00Ä\x00Ã\x00m\x00ÅÀ#À'\x00g\x00@ÀrÀv\x00¾\x00½\x00l\x00¿À[0m" HTTPStatus.BAD_REQUEST -
+192.241.200.14 - - [23/May/2024 11:07:12] "[33mGET /v2/ HTTP/1.1[0m" 404 -
+45.95.169.184 - - [23/May/2024 16:37:49] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00\x11\x00\x00\x01é\x00\x01\x00\x00\x00ÿÿÿÿ\x01\x00\x00\x00\x00\x00\x00\x00')
+45.95.169.184 - - [23/May/2024 16:37:49] "[35m[1m\x00\x00\x00\x11\x00\x00\x01é\x00\x01\x00\x00\x00ÿÿÿÿ\x01\x00\x00\x00\x00\x00\x00\x00\x0c\x02\x00\x00\x00\x10MyCustomAssembly\x05\x01\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -

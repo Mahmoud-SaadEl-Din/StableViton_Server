@@ -1,0 +1,10 @@
+DATA
+*.ckpt
+__pycache__/
+.vscode/
+*.pyc
+test/
+VITONHD.*
+samples/*
+VITONHD_PBE_pose.rar
+VITONHD_VAE_finetuning.rar
