@@ -1,21 +1,6 @@
 # StableViton_Server
-This repo for production. Making Microservice of StableViton to use it in different applications
+This repo for production. Making Microservice of [StableVITON](https://arxiv.org/abs/2312.01725) to use it in different applications
 
-# StableVITON: Learning Semantic Correspondence with Latent Diffusion Model for Virtual Try-On
-This repository is the official implementation of [StableVITON](https://arxiv.org/abs/2312.01725)
-
-> **StableVITON: Learning Semantic Correspondence with Latent Diffusion Model for Virtual Try-On**<br>
-> [Jeongho Kim](https://scholar.google.co.kr/citations?user=ucoiLHQAAAAJ&hl=ko), [Gyojung Gu](https://www.linkedin.com/in/gyojung-gu-29033118b/), [Minho Park](https://pmh9960.github.io/), [Sunghyun Park](https://psh01087.github.io/), [Jaegul Choo](https://sites.google.com/site/jaegulchoo/) 
-
-[[Arxiv Paper](https://arxiv.org/abs/2312.01725)]&nbsp;
-[[Website Page](https://rlawjdghek.github.io/StableVITON/)]&nbsp;
-
-![teaser](assets/teaser.png)&nbsp;
-
-## TODO List
-- [x] ~~Inference code~~
-- [x] ~~Release model weights~~
-- [ ] Training code
 
 ## Environments
 ```bash
@@ -38,14 +23,17 @@ pip install triton==2.0.0
 pip install open-clip-torch==2.19.0
 pip install diffusers==0.20.2
 pip install scipy==1.10.1
+pip install clean-fid # this line is missing from original repo. we added it
 conda install -c anaconda ipython -y
 ```
 
-## Weights and Data
-You can download the VITON-HD dataset from [here](https://github.com/shadow2496/VITON-HD).<br>
-To download the model weights, please fill the [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdmAZL7J9_CBNhVuRqaL25UQuOYzL5zVJM0Q0cWi54rJFR1Vg/viewform?usp=sf_link) related to the consent.<br>
-The input data should include (1) agnostic-map (2) agnostic-mask (3) cloth (4) densepose. For testing VITONHD, the test dataset should be organized as follows:
+## Model weights
+Original model of StableViton can be download from here. It's called [VITONHD](https://kaistackr-my.sharepoint.com/personal/rlawjdghek_kaist_ac_kr/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Frlawjdghek%5Fkaist%5Fac%5Fkr%2FDocuments%2FStableVITON&ga=1). It's around 6.9G. 
 
+download from sharepoint is not easy throught terminal (for server). so I will provide link for GoogleDrive to download soon.
+
+
+prepare the test data in the following structure.
 ```
 test
 |-- image
@@ -53,10 +41,8 @@ test
 |-- agnostic
 |-- agnostic-mask
 |-- cloth
+|-- test_pairs.csv
 ```
-
-## Preprocessing
-The VITON-HD dataset serves as a benchmark and provides an agnostic mask. However, you can attempt virtual try-on on **arbitrary images** using segmentation tools like [SAM](https://github.com/facebookresearch/segment-anything). Please note that for densepose, you should use the same densepose model as used in VITON-HD.
 
 ## Inference
 ```bash
@@ -69,17 +55,6 @@ python inference.py --config_path ./configs/VITON512.yaml --batch_size 4 --model
 
 You can also preserve the unmasked region by '--repaint' option. 
 
-
-## Citation
-If you find our work useful for your research, please cite us:
-```
-@artical{kim2023stableviton,
-    title={StableVITON: Learning Semantic Correspondence with Latent Diffusion Model for Virtual Try-On},
-    author={Kim, Jeongho and Gu, Gyojung and Park, Minho and Park, Sunghyun and Choo, Jaegul},
-    booktitle={arXiv preprint arxiv:2312.01725},
-    year={2023}
-}
-```
 
 **Acknowledgements** Sunghyun Park is the corresponding author.
 
